@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<body>
+		<script>
+			var cody = new Object(); //Object created using Object()
+			// Object can have data/attributes
+			cody.age=33;
+			cody.living=true;
+			cody.gender = 'male';
+			
+			// An object can have functions
+			cody.getGender =  function(){ return cody.Gender;};
+			
+			console.log(cody);
+			
+			
+			// An object can also be created by first creating a generic Class.
+			var Person = function(living, age, gender) { // Defining the constructor for the class
+				this.living= living;
+				this.age = age;
+				this.gender = gender;
+				this.getGender = function(){
+					return this.Gender;
+				};
+			};
+			// Creating an object of Person
+			var cody2 = new Person(true, 30, 'female');
+			
+			// Difference between cody(Object created using Object()) and cody2(obejct created using Person) is that multiple objects once the Person class is created, multiple instances of it can be created. 
+		</script>
+	</body>
+</html>
