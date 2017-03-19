@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			// primitive can be be treated like complex objects
+			var myNull = null;
+			var myUndefined = undefined;
+			var myString1 = 'foo';
+			var myString2 = String('foo'); // Primitive since 'new' keyword is not used
+			var myNumber1 = 22;
+			var myNumber2 = Number('22');
+			var myBoolean1 = true;
+			var myBoolean2 = Boolean('true');
+			
+			console.log(myBoolean1.toString(), myBoolean2.toString());
+			console.log(myNumber1.toString(), myNumber2.toString());
+			console.log(myString1.toString(), myString2.toString());
+			
+			// undefined and null cannot be treated like complex objects
+			// Hence the following will throw errors
+			// myNull.toString();
+			// myUndefined.toString();
+		</script>
+	</body>
+</html>

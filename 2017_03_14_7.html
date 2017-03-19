@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			var myString = 'foo';
+			var myStringCopy = myString;
+			myString = null;
+			// myStringCopy is not a reference to myString. Changing the value of myString will not affect the value of myStringValue
+			console.log(myString, myStringCopy);
+		</script>
+	</body>
+</html>

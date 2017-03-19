@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			// Literals vs 'new'
+			var myNumber = new Number(23);
+			var myNumberLiteral = 23;
+			
+			var myString = new String('foo');
+			var myStringLiteral = 'foo';
+			
+			var myFunction = new Function('x', 'y', 'return x*y');
+			var myFunctionLiteral = function(x,y){return x*y};
+			
+			var myBoolean = new Boolean(false);
+			var myBooleanLiteral = false;
+			
+			var myArray = new Array('foo','bar','baz');
+			var myArrayLiteral = ['foo','bar','baz'];
+			
+			var myRegExp = new RegExp('\bt[a-z]+\b');
+			var myRegExpLiteral = /\bt[a-z]+\b/;
+			
+			var myObject = new Object();
+			var myObjectLiteral = {};
+			
+			// Verifying that the literals are created from the same constructors
+			console.log(myNumber.constructor, myNumberLiteral.constructor);
+			console.log(myString.constructor, myStringLiteral.constructor);
+			// This can be checked for each of the objects instantiated above.
+		</script>
+	</body>
+</html>

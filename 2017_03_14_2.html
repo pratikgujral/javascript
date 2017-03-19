@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<body>
+		<script>
+			// Creating an object of Array. Array is also an Object
+			var myArray = new Array();
+			
+			console.log(myArray); // logs []
+			console.log(myArray.constructor); // logs Array(){[native code]}
+			console.log(typeof myArray); // logs object
+			
+			// ------------------------------------
+			
+			// Math is not an Constructor fucntion and hence CANNOT be instantiated like var x = new Math();
+			// Math is just an object namespace that hosts many math functions.
+			console.log(Math.PI); // Logs 3.141592653589793
+			console.log(Math.sin(Math.PI/6)); // Logs 0.5
+		</script>
+	</body>
+</html>
